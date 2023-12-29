@@ -19,20 +19,50 @@
   transform: translate(-50%, -50%);
   text-align: center;
   color: white;
+  /* 3d효과 */
+  perspective: 1000px;
 }
+
 .countdown > h1 {
-  font-size: 100px;
   font-family: 'Bagel Fat One';
+  font-size: 100px; /* 기본 글자 크기 */
+}
+h2 {
+  font-family: 'Bagel Fat One';
+  font-size: 100px; /* 기본 글자 크기 */
+  font-weight: lighter;
+}
+
+div[class*='flip_btn'] {
+  width: 150px;
+  height: 100px;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  cursor: pointer;
+  flex: 1 0 auto; /* 유연한 너비를 가짐 */
+  margin: 5px; /* 요소들 사이의 간격 설정 */
+}
+div[class*='flip_btn']:hover {
+  transform: rotateX(-90deg);
+}
+div[class*='front'] {
+  background-color: rgb(74, 74, 74);
+  height: 100px;
+  transform: translateZ(50px);
+}
+div[class*='back'] {
+  background-color: rgb(90, 90, 90);
+  height: 100px;
+  transform: rotateX(90deg) translateZ(150px);
 }
 
 #timer {
   margin-top: 20px;
-  font-size: 50px;
-}
-
-#timer span {
-  padding: 10px;
-  border-radius: 5px;
-  margin: 0 5px;
-  background-color: #333;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around; /* 요소들을 동일한 간격으로 배치합니다. */
+  align-items: center; /* 요소들을 수직으로 가운데 정렬합니다. */
 }

@@ -2,19 +2,33 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>새해 카운트다운</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="countdown">
-        <h1>새해 카운트다운</h1>
+        <h1 class="title">2024까지</h1>
         <div id="timer">
-          <span id="days"></span>
-          <span id="hours"></span>
-          <span id="minutes"></span>
-          <span id="seconds"></span>
+          <div class="flip_btn1">
+            <div class="front1"></div>
+            <div class="back1">days</div>
+          </div>
+          <div class="flip_btn2">
+            <div class="front2">hours</div>
+            <div class="back2">hours</div>
+          </div>
+          <div class="flip_btn3">
+            <div class="front3">minutes</div>
+            <div class="back3">minutes</div>
+          </div>
+          <div class="flip_btn4">
+            <div class="front4">seconds</div>
+            <div class="back4">seconds</div>
+          </div>
         </div>
+        <h2 class="title2">남았어요</h2>
       </div>
     </div>
     <script src="script.js"></script>
