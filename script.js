@@ -28,7 +28,6 @@ function updateCountdown() {
 
 // Function to calculate time remaining until New Year
 function getTimeRemaining() {
-  var container = document.querySelector('.container');
   const now = new Date();
   //Fri Dec 29 2023 22:22:57 GMT+0900 (한국 표준시) typeof
   const newYear = new Date(now.getFullYear() + 1, 0, 1);
